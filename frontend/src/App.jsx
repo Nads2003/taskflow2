@@ -39,7 +39,7 @@ export default function App() {
         {tasks.map(t => (
           <li key={t.id} onClick={() => toggle(t)}
               style={{ textDecoration: t.done ? "line-through" : "none", cursor: "pointer" }}>
-            {t.title}
+            {t.title} <small>(priorité {t.priority})</small>
           </li>
         ))}
       </ul>
